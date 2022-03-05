@@ -13,14 +13,14 @@ public class IntegrationTestApiCalls
      [Fact]
      public async Task TestGetPresidents()
      {
-          var expected = 10;
+          var expected = 45;
           var presidents = await CallCleint<IEnumerable<string>>();
 
           Assert.NotNull(presidents);
           Assert.Equal(expected, presidents?.Count());
      }
 
-     private async Task<T?> CallCleint<T>(HttpStatusCode expectedStatusCode = HttpStatusCode.OK)
+     private static async Task<T?> CallCleint<T>(HttpStatusCode expectedStatusCode = HttpStatusCode.OK)
      {
           var application = new TopTenPresidentsApplication();
           var client = application.CreateClient();
