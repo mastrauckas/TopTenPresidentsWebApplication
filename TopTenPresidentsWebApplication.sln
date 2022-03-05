@@ -14,13 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TopTenPresidentsDatabase", "TopTenPresidentsDatabase\TopTenPresidentsDatabase.sqlproj", "{86CB1983-C05A-4E49-AF0C-E94BF653412E}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopTenPresidents.Test.Integration", "TopTenPresidents.Test.Integration\TopTenPresidents.Test.Integration.csproj", "{555391D0-5322-4C0B-8FE7-4CB4F5A137EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopTenPresidents.Shared", "TopTenPresidents.Shared\TopTenPresidents.Shared.csproj", "{1EF12D0D-1CC7-44D9-8609-34E3D2A65498}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopTenPresidents.Shared", "TopTenPresidents.Shared\TopTenPresidents.Shared.csproj", "{1EF12D0D-1CC7-44D9-8609-34E3D2A65498}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopTenPresidents.Data", "TopTenPresidents.Data\TopTenPresidents.Data.csproj", "{2095ED62-9450-4CD8-A423-70CC66432D9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopTenPresidents.Data", "TopTenPresidents.Data\TopTenPresidents.Data.csproj", "{2095ED62-9450-4CD8-A423-70CC66432D9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,12 +30,6 @@ Global
 		{5259E5FE-CF20-4FB5-874B-57156D704355}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5259E5FE-CF20-4FB5-874B-57156D704355}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5259E5FE-CF20-4FB5-874B-57156D704355}.Release|Any CPU.Build.0 = Release|Any CPU
-		{86CB1983-C05A-4E49-AF0C-E94BF653412E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86CB1983-C05A-4E49-AF0C-E94BF653412E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86CB1983-C05A-4E49-AF0C-E94BF653412E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{86CB1983-C05A-4E49-AF0C-E94BF653412E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86CB1983-C05A-4E49-AF0C-E94BF653412E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{86CB1983-C05A-4E49-AF0C-E94BF653412E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{555391D0-5322-4C0B-8FE7-4CB4F5A137EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{555391D0-5322-4C0B-8FE7-4CB4F5A137EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{555391D0-5322-4C0B-8FE7-4CB4F5A137EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
