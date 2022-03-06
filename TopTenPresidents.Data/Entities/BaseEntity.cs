@@ -3,13 +3,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TopTenPresidents.Data.Entities;
 
-public record BaseEntity<T> where T : struct
+public record BaseEntity<TPrimaryKeyTyp> 
+     where TPrimaryKeyTyp : struct
 {
      public BaseEntity() { }
 
-     public BaseEntity(T id) => Id = id;
+     public BaseEntity(TPrimaryKeyTyp id) => Id = id;
 
      [Required, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-     public T Id { get; init; }
+     public TPrimaryKeyTyp Id { get; init; }
 }
 
