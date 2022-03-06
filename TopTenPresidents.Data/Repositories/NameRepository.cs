@@ -7,7 +7,7 @@ namespace TopTenPresidents.Data.Repositories;
 
 public class NameRepository : RepositoryBase<short, Name>, INameRepository
 {
-     public NameRepository(short primaryKeyType, TopTenPresidentsDbContext context) : base(context)
+     public NameRepository(TopTenPresidentsDbContext context) : base(context)
      {
      }
 
