@@ -12,7 +12,7 @@ var connectionString = builder.Configuration.GetConnectionString("Default");
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<TopTenPresidentsDbContext>(db => db.UseSqlServer(connectionString));
+builder.Services.AddSqlServer<TopTenPresidentsDbContext>(connectionString);
 
 var app = builder.Build();
 
