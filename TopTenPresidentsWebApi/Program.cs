@@ -1,15 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using TopTenPresidents.Data.DbContexts;
+using TopTenPresidentsWebApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("Default");
-
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddSqlServer<TopTenPresidentsDbContext>(connectionString);
+builder.Services.ConfigureServices(connectionString);
 
 var app = builder.Build();
 
@@ -21,6 +16,6 @@ if (app.Environment.IsDevelopment())
 }
 app.UseHttpsRedirection();
 
-app.MapGet("/GetPresidents", async () => await Task.FromResult(Results.StatusCode(501)));
+app.ConfigureApis();
 
 app.Run();

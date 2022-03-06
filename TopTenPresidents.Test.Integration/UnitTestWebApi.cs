@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
+using TopTenPresidents.Shared.TransferDtos;
 using Xunit;
 
 namespace TopTenPresidents.Test.Integration;
@@ -14,7 +15,7 @@ public class IntegrationTestApiCalls
      public async Task TestGetPresidents()
      {
           var expected = 45;
-          var presidents = await CallCleint<IEnumerable<string>>();
+          var presidents = await CallCleint<IEnumerable<PresidentTransferDto>>();
 
           Assert.NotNull(presidents);
           Assert.Equal(expected, presidents?.Count());
